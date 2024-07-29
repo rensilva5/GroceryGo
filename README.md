@@ -2,7 +2,9 @@
 
 Responsive Shopping List Web Application
 
-![Shopping List App Screenshot](Desktop/GroceryGo.png)
+<!-- ![Shopping List App Screenshot](images/GroceryGo.png) -->
+
+![Readme image](images/GroceryGo.png)
 
 ## Features:
 
