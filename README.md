@@ -2,7 +2,7 @@
 
 Responsive Shopping List Web Application
 
-# Features:
+## Features:
 
 - Add, edit, and delete items on your shopping list
 - Persistent storage using localStorage
@@ -10,7 +10,7 @@ Responsive Shopping List Web Application
 - Modern UI with custom themes and accents
 - Opaque image background for aesthetic appeal
 
-# Installation
+## Installation:
 
 To run this project locally, follow these steps:
 
@@ -22,13 +22,13 @@ cd shopping-list-app
 - Open the project:
   Open the index.html file in your preferred web browser.
 
-# Deployment and Website name:
+## Deployment and Website name:
 
 - You can use the App or Web clicking bellow:
   [grocerygo.store](https://www.grocerygo.store/)
 - It's been deplyed using Hostinger.
 
-# Usage
+## Usage
 
 - Add an Item:
 
@@ -44,15 +44,15 @@ Completed items will have a strikethrough and a different color.
 
 Click the delete button (trash icon) next to an item to remove it from the list.
 
-# CSS Overview
+## CSS Overview
 
-The CSS is designed to provide a modern and responsive layout:
+Please refer to style.css file. The CSS is designed to provide a modern and responsive layout:
 
 - Colors: Customizable variables for background, primary, secondary, accent, and text colors.
 - Fonts: Uses "Segoe UI", Tahoma, Geneva, Verdana, and sans-serif for a clean and professional look.
 - Layout: Flexbox is used for alignment and spacing, ensuring a responsive design.
   Media Queries: Adjustments for font sizes, padding, and layout for screens smaller than 500px.
 
-# Contributing
+## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
