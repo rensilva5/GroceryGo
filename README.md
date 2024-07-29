@@ -2,6 +2,8 @@
 
 Responsive Shopping List Web Application
 
+![Shopping List App Screenshot](desktop/GroceryGo.png)
+
 ## Features:
 
 - Add, edit, and delete items on your shopping list
