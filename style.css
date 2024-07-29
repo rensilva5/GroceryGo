@@ -1,0 +1,196 @@
+:root {
+  --background: #22242b;
+  --primary-color: #1c1d20;
+  --secundary-color: #4a4d57;
+  --accent-color: #00ffc4;
+  --text-color: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("https://mythiclibrary.shop/wp-content/uploads/2024/07/pexels-karolina-grabowska-4022090-scaled-e1722205899410.jpg")
+      center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#todo-input {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  width: 100%;
+  background: linear-gradient(rgba(56, 54, 54, 0.3), rgba(100, 100, 100, 0.3));
+  border: 2px solid var(--accent-color);
+  border-radius: 1000px;
+  font: inherit;
+  color: var(--text-color);
+  caret-color: var(--accent-color);
+  font-size: 1.35rem;
+}
+
+#todo-input:focus {
+  outline: none;
+}
+
+form {
+  position: relative;
+}
+
+#add-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--accent-color);
+  height: 100%;
+  padding: 0 30px;
+  border-radius: 1000px;
+  font: inherit;
+  font-weight: 600;
+  color: var(--background);
+  cursor: pointer;
+}
+
+.todo {
+  margin-bottom: 10px;
+  padding: 0 16px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.todo .todo-text {
+  padding: 15px;
+  padding-right: 0;
+  flex-grow: 1;
+  transition: 200ms ease;
+}
+
+.delete-button {
+  padding: 3px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.delete-button svg {
+  transition: 200ms ease;
+}
+
+.delete-button:hover svg {
+  fill: #ff0033;
+}
+
+.custom-checkbox {
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  min-height: 20px;
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox {
+  background-color: var(--accent-color);
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox svg {
+  fill: var(--primary-color);
+}
+
+input[type="checkbox"]:checked ~ .todo-text {
+  text-decoration: line-through;
+  color: var(--secundary-color);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 12pt;
+  }
+
+  body {
+    padding: 5px;
+  }
+
+  h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    gap: 8px;
+  }
+
+  #todo-input {
+    padding: 10px 15px;
+    font-size: 14pt;
+  }
+
+  #add-button {
+    padding: 0 20px;
+    font-size: 14pt;
+  }
+
+  .todo {
+    padding: 0 12px;
+  }
+
+  .todo .todo-text {
+    padding: 10px;
+    font-size: 14pt;
+  }
+
+  .delete-button {
+    padding: 2px;
+  }
+
+  .custom-checkbox {
+    min-height: 16px;
+    min-width: 16px;
+  }
+}
